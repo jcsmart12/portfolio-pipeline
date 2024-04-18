@@ -1,0 +1,284 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 6rem;
+}
+
+body {
+  font-family: "Sono", sans-serif;
+  background: rgb(117, 214, 181);
+  background: radial-gradient(
+    circle,
+    rgba(117, 214, 181, 1) 0%,
+    rgba(198, 236, 211, 1) 0%,
+    rgba(110, 226, 249, 1) 100%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.header {
+  top: 0;
+  left: 0;
+  padding: 2rem 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 3px groove black;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+.logo:hover {
+  color: black;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.navbar a {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-left: 4rem;
+  text-decoration: underline;
+  transition: 0.1s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: blue;
+}
+
+.section__container {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 200px;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  color: #0f151c;
+  font-weight: 600;
+  font-size: large;
+  margin-bottom: 0.5rem;
+}
+
+.text {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.text span {
+  font-weight: 600;
+  color: rgb(33, 33, 202);
+}
+
+.description {
+  line-height: 1.5rem;
+  color: #49505f;
+  margin-bottom: 2rem;
+  text-align: justify;
+  text-indent: 40px;
+}
+
+.resume {
+  color: black;
+  background: rgb(241, 241, 241);
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.resume:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+  background: rgb(193, 230, 237);
+  box-shadow: 0 0 20px lemonchiffon;
+  border-color: black;
+  border-radius: 5px;
+}
+
+.image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image img {
+  width: 500px;
+  height: 95%;
+  border: 5px groove black;
+  border-radius: 5%;
+  z-index: -1;
+  object-fit: fill;
+  box-shadow: 0 0 50px lemonchiffon;
+}
+.container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  flex-wrap: wrap;
+}
+
+.workplan {
+  max-width: 800px;
+  background-color: azure;
+  padding: 20px;
+  text-align: center;
+  border: 5px groove bisque;
+  border-radius: 5px;
+  height: 170px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.workplan:hover {
+  box-shadow: 0 0 20px lemonchiffon;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.features {
+  list-style: none;
+  padding-left: 100px;
+}
+
+.features li {
+  margin-bottom: 20px;
+  font-size: medium;
+  text-align: left;
+}
+
+#contact-form h2 {
+  text-align: center;
+  margin-top: 1em;
+  /* margin-bottom: 1em; */
+  font-size: 36px;
+}
+
+#contact-form form {
+  max-width: 50em;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+#contact-form form .input-box input,
+#contact-form textarea {
+  width: 100%;
+  padding: 1.5em;
+  font-size: 18px;
+  color: black;
+  background: rgb(241, 241, 241);
+  border-radius: 0.8rem;
+  margin: 1rem 0;
+  resize: none;
+}
+
+.btn-1 {
+  background: rgb(241, 241, 241);
+  font-size: 20px;
+  padding: 20px 30px;
+  border-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 25px 0;
+  background: white;
+  border: 3px solid lemonchiffon;
+  border-width: 3px 0;
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.footer .social a {
+  font-size: 24px;
+  color: black;
+}
+
+.bx:hover {
+  transition: 0.3s;
+  transform: scale(1.4);
+}
+
+.footer ul {
+  text-align: center;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer ul li a {
+  color: black;
+}
+
+.footer-anim:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 30px;
+  color: black;
+  font-size: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: aqua;
+}
+
+::-webkit-scrollbar-track {
+  background-color: beige;
+  width: 50px;
+}
